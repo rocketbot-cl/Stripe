@@ -1,4 +1,4 @@
-# AdvancedExcel
+# Stripe
 Module to send an invoice through Stripe's payment system!
 
 ## Commands
