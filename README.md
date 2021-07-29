@@ -15,25 +15,25 @@ Module to send an invoice through Stripe's payment system!
 1. #### Login
 	Input the client id to log into your Stripe account.
 	
-	![Login](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe1.png)
+	![Login](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe1.PNG)
 	
 2. #### Add Item
 	Adds item to your invoice.
 	
-	![Login](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe3.png)
+	![Add Item](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe3.PNG)
 	
 3. #### Add Customer
 	Adds the recipient of the invoice.
 	
-	![Login](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe4.png)
+	![Add Customer](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe4.PNG)
 
 4. #### Create Invoice
 	Creates invoice with the items and the recipient
-	![Login](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe2.png)
+	![Create Invoice](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe2.PNG)
 	
 5. #### Send Invoice
 	Sends Invoice
-	![Login](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe5.png)
+	![Send Invoice](https://raw.githubusercontent.com/rocketbot-cl/Stripe/master/example/stripe5.PNG)
 ### OS:
   - Linux
   - MacOsX
