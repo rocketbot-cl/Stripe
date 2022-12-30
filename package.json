@@ -3,9 +3,9 @@
   "author": "Sudhan Annamalai",
   "description": "Modulo para trabajar con Stripe Invoice",
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "1.0",
+  "version": "1.0.1",
   "license": "MIT",
-  "homepage": "http://rocketbot.co",
+  "homepage": "http://rocketbot.com",
   "linux": false,
   "windows": true,
   "mac": false,
@@ -37,12 +37,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "ID",
+              "en": "ID"
             },
             "title": {
               "es": "Identificación del cliente",
               "en": "client id:"
+            },
+            "description": {
+              "es": "ID del cliente del token nuevo",
+              "en": "client ID of the new token"
             },
             "help": {
               "es": "ingrese la identificación del cliente",
@@ -92,6 +96,10 @@
               "es": "Días hasta el vencimiento",
               "en": "Days Till Due:"
             },
+            "description": {
+              "es": "Días que tiene el cliente para pagar la factura",
+              "en": "Days the customer has to pay the invoice"
+            },
             "help": {
               "es": "ingrese la fecha separada por",
               "en": "enter date seperated by '-'"
@@ -122,7 +130,7 @@
         "options": null
       },
       "es": {
-        "title": "Enviará la factura",
+        "title": "Enviar factura",
         "description": "Enviar factura al cliente",
         "title_options": null,
         "options": null
@@ -154,7 +162,7 @@
       },
       "es": {
         "title": "Añadir artículo",
-        "description": "Agregar un artículo a la factura\n",
+        "description": "Agregar un artículo a la factura",
         "title_options": null,
         "options": null
       },
@@ -164,16 +172,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "art 1",
+              "en": "item 1"
             },
             "title": {
               "es": "Nombre del árticulo",
               "en": "Item Name:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Nombre del árticulo que se agregará a la factura",
+              "en": "Name of the item that will be added to the invoice"
             },
             "id": "item",
             "css": "col-lg-6"
@@ -181,16 +189,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "200",
+              "en": "200"
             },
             "title": {
               "es": "Precio",
               "en": "Price:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Precio del árticulo que se agregará a la factura",
+              "en": "Price of the item that will be added to the invoice"
             },
             "id": "amount",
             "css": "col-lg-6"
@@ -198,16 +206,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "5",
+              "en": "5"
             },
             "title": {
               "es": "Cantidad",
               "en": "Quantity:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Cantidad del árticulo que se agregará a la factura",
+              "en": "Quantity of the item that will be added to the invoice"
             },
             "id": "quantity",
             "css": "col-lg-6"
@@ -215,16 +223,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "currency",
+              "en": "currency"
             },
             "title": {
               "es": "Divisa",
               "en": "Currency:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Divisa de la factura",
+              "en": "Currency of the invoice"
             },
             "id": "currency",
             "css": "col-lg-6"
@@ -263,16 +271,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "John Doe",
+              "en": "John Doe"
             },
             "title": {
               "es": "Nombre del cliente",
               "en": "Customer Name:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Nombre del cliente que se agregará a la factura",
+              "en": "Customer name that will be added to the invoice"
             },
             "id": "name",
             "css": "col-lg-6"
@@ -280,16 +288,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "johndoe@mail.com",
+              "en": "johndoe@mail.com"
             },
             "title": {
               "es": "Correo electrónico",
-                "en": "Email:"
+              "en": "Email:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Correo electrónico del cliente que se agregará a la factura",
+              "en": "Customer email that will be added to the invoice"
             },
             "id": "email",
             "css": "col-lg-6"
@@ -297,16 +305,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "Av. Siempre viva",
+              "en": "Av. Evergreen"
             },
             "title": {
-              "es": " ",
-              "en": "dirección 1:"
+              "es": "Dirección 1:",
+              "en": "Address Line 1:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Dirección 1 del cliente",
+              "en": "Customer address line 1"
             },
             "id": "line1",
             "css": "col-lg-6"
@@ -314,16 +322,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "742",
+              "en": "742"
             },
             "title": {
-              "es": "dirección 2",
+              "es": "Dirección 2",
               "en": "Address Line 2:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Dirección 2 del cliente",
+              "en": "Customer address line 2"
             },
             "id": "line2",
             "css": "col-lg-6"
@@ -331,16 +339,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "Springfield",
+              "en": "Springfield"
             },
             "title": {
               "es": "Ciudad",
               "en": "City:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Ciudad del cliente",
+              "en": "Customer city"
             },
             "id": "city",
             "css": "col-lg-6"
@@ -348,16 +356,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "United States",
+              "en": "United States"
             },
             "title": {
               "es": "País",
               "en": "Country:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "País del cliente",
+              "en": "Customer country"
             },
             "id": "country",
             "css": "col-lg-6"
@@ -365,16 +373,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "Oregon",
+              "en": "Oregon"
             },
             "title": {
               "es": "Estado",
               "en": "State:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Estado del cliente",
+              "en": "Customer state"
             },
             "id": "state",
             "css": "col-lg-6"
@@ -382,16 +390,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "1234",
+              "en": "1234"
             },
             "title": {
               "es": "Código postal",
-              "en": "Postal Code:"
+              "en": "Postal Code"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Código postal del cliente",
+              "en": "Customer postal code"
             },
             "id": "postal_code",
             "css": "col-lg-6"
@@ -399,16 +407,16 @@
           {
             "type": "input",
             "placeholder": {
-              "es": " ",
-              "en": " "
+              "es": "4155550123",
+              "en": "4155550123"
             },
             "title": {
               "es": "Teléfono",
               "en": "Phone:"
             },
-            "help": {
-              "es": " ",
-              "en": " "
+            "description": {
+              "es": "Teléfono del cliente",
+              "en": "Customer phone"
             },
             "id": "phone",
             "css": "col-lg-6"
