@@ -1,32 +1,32 @@
 # Stripe
   
-Module for working with Stripe Invoice  
+Modulo para trabajar con Stripe Invoice 
 
 *Read this in other languages: [English](README.md), [Español](README.es.md).*
 
-## How to install this module
+## Como instalar este módulo
   
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
+__Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Rocketbot.  
 
 
 
 ## Overview
 
 
-1. Login  
-Input the fresh token client id and client secret to get the access token
+1. Acceso  
+Ingrese el ID de cliente del token nuevo y el secreto del cliente para obtener el token de acceso
 
-2. Create Invoice  
-Create an invoice for the customer
+2. Crear Factura  
+Crea una factura para el cliente
 
-3. Send Invoice  
-Send invoice to the customer
+3. Enviar factura  
+Enviar factura al cliente
 
-4. Add Item  
-Add an item to the invoice
+4. Añadir artículo  
+Agregar un artículo a la factura
 
-5. Add Customer  
-Add a recipient to the invoice  
+5. Agregar cliente  
+Agregar un destinatario a la factura  
 
 
 
